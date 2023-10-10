@@ -7,28 +7,40 @@ export default function App() {
 
   const addValue = () => {
     // console.log("Value Added")
-    setCounter(counter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    console.log(counter)
+
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
   }
 
-  const decreaseVal = () => {
-    setCounter(counter - 1)
-  }
+  // const decreaseVal = () => {
+  //   setCounter(counter - 1)
+  // }
 
-  const resetHandler = () => {
-    setCounter(0)
-  }
+  // const resetHandler = () => {
+  //   setCounter(0)
+  // }
 
 
   return (
     <div>
 
-      <h2>Counter Value  {counter}</h2>
-      
-      <button onClick={addValue}>Increment</button>&nbsp; &nbsp;
-      
-      <button onClick={decreaseVal}>Decrement</button>&nbsp;&nbsp;
+      <h2>Counter Value : {counter}</h2>
 
-      <button onClick={resetHandler}>Reset</button>
+      <button onClick={addValue}>Increment</button>&nbsp; &nbsp;
+
+      {/* <button onClick={decreaseVal}>Decrement</button>&nbsp;&nbsp;
+
+      <button onClick={resetHandler}>Reset</button> */}
     </div>
 
   )
