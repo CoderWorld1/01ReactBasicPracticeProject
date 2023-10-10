@@ -7,28 +7,24 @@ export default function App() {
 
   const addValue = () => {
     // console.log("Value Added")
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
-    setCounter((prevCounter) => prevCounter + 1)
-    console.log(counter)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // setCounter((prevCounter) => prevCounter + 1)
+    // console.log(counter)
 
-    // setCounter(counter + 1)
-    // setCounter(counter + 1)
-    // setCounter(counter + 1)
-    // setCounter(counter + 1)
-    // setCounter(counter + 1)
-    // setCounter(counter + 1)
+
+    setCounter(counter + 1)
   }
 
-  // const decreaseVal = () => {
-  //   setCounter(counter - 1)
-  // }
+  const decreaseVal = () => {
+    setCounter(counter - 1)
+  }
 
-  // const resetHandler = () => {
-  //   setCounter(0)
-  // }
+  const resetHandler = () => {
+    setCounter(0)
+  }
 
 
   return (
@@ -38,9 +34,9 @@ export default function App() {
 
       <button onClick={addValue}>Increment</button>&nbsp; &nbsp;
 
-      {/* <button onClick={decreaseVal}>Decrement</button>&nbsp;&nbsp;
+      <button onClick={decreaseVal}>Decrement</button>&nbsp;&nbsp;
 
-      <button onClick={resetHandler}>Reset</button> */}
+      <button onClick={resetHandler}>Reset</button>
     </div>
 
   )
